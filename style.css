@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+
+    backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  .toggle-tabs {
+    display: flex;
+    background: #e0e0e0;
+  }
+  
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #555;
+  }
+  
+  #toggle:not(:checked) ~ .toggle-tabs .login-tab {
+    background: #fff;
+    color: #000;
+  }
+  
+  #toggle:checked ~ .toggle-tabs .signup-tab {
+    background: #fff;
+    color: #000;
+  }
+  
+  .form-container {
+    width: 200%;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  #toggle:checked ~ .form-container {
+    transform: translateX(-50%);
+  }
+  
+  .form {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .form label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background: #1e90ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form button:hover {
+    background: #0077cc;
+  }
+  
+
+
+  /* beauty below */
+  .container {
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  .form input,
+  .form button {
+    border-radius: 10px;
+  }
+
+  
+   .form input {
+    transition: all 0.3s ease;
+  }
+  .form input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px #1e90ff44;
+  }
+  .form button:hover {
+    transform: scale(1.03);
+  }
+  /* hover below */
+  .form input {
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    padding: 10px;
+  }
+  
+  .form input:hover,
+  .form input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 8px #1e90ff55;
+  }
+
+  .tab-label {
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab-label:hover {
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+  }
+  
+
+  .form button {
+    background: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #1e90ff99;
+  }
+  
+
+  #toggle:checked ~ .container {
+    transition: all 0.5s ease;
+  }
+  
