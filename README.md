@@ -42,7 +42,6 @@ The dashboard aims to **track college students’ academic progress semester-wis
 
 **College Students Dashboard**  
 > A student progress tracking system developed by **Rajveer Singh**, helping visualize semester-wise and subject-wise performance.  
-> [View Main Project Post on LinkedIn](https://www.linkedin.com/posts/rajveersingh81248_dataanalysis-python-mongodb-activity-7306574856999878656-XTR2)
 
 ---
 
